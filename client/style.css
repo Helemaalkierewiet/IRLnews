@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: 'Courier New', Courier, monospace;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+#mainbody {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    /* 👇 Background settings */
+    background-image: url('/images/bgworld.png'); /* Replace with your image filename or URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* optional - makes it stay in place when scrolling */
+}
+
+#mainbody h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background: rgba(0, 100, 0, 0.7); /* darker green */
+    border-left: 4px solid limegreen;
+    margin-bottom: 0.3rem;
+    color: #ccffcc;
+    text-shadow: 1px 1px 2px #000;
+    width: fit-content;
+    max-width: 90%;
+}
+
+#mainbody h3 {
+    font-size: 1rem;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    border-left: 3px solid #555;
+    margin-bottom: 0.2rem;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 1px #000;
+    width: fit-content;
+    max-width: 90%;
+}
+
+form {
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+input#chatfield {
+    flex-grow: 1;
+    padding: 0.5rem;
+    background: #111;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background: limegreen;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00ff00;
+}
