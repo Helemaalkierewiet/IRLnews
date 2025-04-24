@@ -136,7 +136,7 @@ async function tellJoke(newsArticle, res, context, startMessages) {
 let latestArticle = [];
 
 const fetchNews = async () => {
-    const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=ddab06a06eeb49f7a7965bc7aee00d80&pageSize=1&page=1";
+    const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=ddab06a06eeb49f7a7965bc7aee00d80&pageSize=1&page=2";
 
     try {
         const response = await fetch(url);

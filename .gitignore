@@ -2,6 +2,6 @@
 .vscode
 .DS_Stora
 
-.env
+client/.env
 
 node_modules
